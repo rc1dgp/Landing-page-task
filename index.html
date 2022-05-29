@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <title>Dine in a Dime</title>
+</head>
+
+
+<body>
+  <!-- NAV-BAR  -->
+  <div class="topnav">
+    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> HOME</a>
+    <a href="about.html"><i class="fa fa-fw fa-address-card"></i>ABOUT US</a>
+    <a href="menu.html"><i class="fa fa-fw fa-cutlery"></i>OUR MENU</a>
+    <a href="gallery.html"><i class="fa fa-fw fa-picture-o"></i>GALLERY</a>
+    <a href="contact.html"><i class="fa fa-fw fa-map-marker"></i>CONTACT</a>
+    <a href="#home" class="split"><i class="fa fa-fw fa-cutlery"></i>ORDER ONLINE</a>
+  </div>
+
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="dish_4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="dish_2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="dish_3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <h2 style="margin:10px 50px 10px 50px;">Our Services</h2>
+  <div class="items">
+
+    <!-- Image 1 -->
+    <div class="card" style="max-height:275px ;">
+      <img src="wedding-party-mahima-bhatia-photography-sparkle-up-the-world.jpeg" style="width:100%">
+      <br>
+      <h5>Marriage Events</h5>
+      <p><button>Click to know more</button></p>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="card" style="max-height:250px ;">
+      <img src="baby.jpg" style="max-width: 210px; max-height:129px">
+      <br>
+      <h5>Baby Shower</h5>
+
+      <p><button>Click to know more.</button></p>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="card" style="max-height:250px ;">
+      <img src="engage1.jpg" style="max-width: 250px; max-height: 129px;">
+      <br>
+      <h5>Engagement Parties</h5>
+      <p><button>Click to know more.</button></p>
+    </div>
+
+
+    <!-- Image 4 -->
+    <div class="card" style="max-height:250px ;">
+      <img src="banquet.jpg" style="max-width: 250px; max-height: 127px;">
+      <br>
+      <h5>Banquet Hall</h5>
+      <p><button>Click to know more</button></p>
+    </div>
+
+    <!-- Image 5 -->
+    <div class="card" style="max-height:250px ;">
+      <img src="adult_bday.jpg" style="max-height:125px;">
+      <br>
+      <h5>Birthday Parties</h5>
+      <p><button>Click to know more</button></p>
+    </div>
+
+    <!-- Image 6 -->
+    <div class="card" style="max-height:250px ;">
+      <img src="cps-meeting.jpg" style="max-height:125px;">
+      <br>
+      <h5>Corporate Meetings</h5>
+      
+      <p><button>Click to know more</button></p>
+    </div>
+  </div>
+
+  <!-- Star Rating -->
+  <div class="rate-btn">
+  <div class="rating">
+  <h2>Star Rating</h2>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+
+<!-- Buttons for pages -->
+<div class="goto-btn">
+
+
+  <a href="menu.html"><button class="button">Menu.</button></a>
+</div>
+<div class="goto-btn">
+ 
+  
+  <a href="gallery.html"></a><button class="button">Gallery.</button></a>
+  </div>
+  <div class="goto-btn">
+   
+    
+    <a href="about.html"></a><button class="button">About Us.</button></a>
+    </div>
+    <div class="goto-btn">
+   
+      
+      <a href="contact.html"> <button class="button">Contact Us.</button></a>
+      </div>
+</div>
+
+<!-- Newsletter -->
+<h2>Our Newsletter</h2>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Want to stay updated regarding our latest offers and coupons.Then subscribe to our newsletter.</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <title>Dine in a dime</title>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> HOME</a>
+        <a href="about.html"><i class="fa fa-fw fa-address-card"></i>ABOUT US</a>
+        <a href="menu.html"><i class="fa fa-fw fa-cutlery"></i>OUR MENU</a>
+        <a href="gallery.html"><i class="fa fa-fw fa-picture-o"></i>GALLERY</a>
+        <a href="contact.html"><i class="fa fa-fw fa-map-marker"></i>CONTACT</a>
+        <a href="#home" class="split"><i class="fa fa-fw fa-cutlery"></i>ORDER ONLINE</a>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="dish_4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="dish_2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="dish_3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+
+
+    <!-- Menu -->
+    <h2 style="margin:10px 50px 10px 50px;">Breakfast Specials</h2>
+    <div class="items">
+
+        <!-- Image 1 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="pancakes.jpg" style="width:100%">
+            <br>
+            <h5>Pancakes</h5>
+            <p class="price">$19.99</p>
+            <p>Pancakes with jam ...</p>
+            <p><button style="margin-bottom: 5px;">Add to Cart</button></p>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="bjam.jpg" style="max-width: 220px; max-height:129px">
+            <br>
+            <h5>Bread-jam</h5>
+            <p class="price">$19.99</p>
+            <p>Bread toasted with ...</p>
+            <p><button style="margin-bottom:2px;">Add to Cart</button></p>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="sandwich.jpg" style="max-width: 250px; max-height: 129px;">
+            <br>
+            <h5>Sandwich</h5>
+            <p class="price">$19.99</p>
+            <p>Delicious and tender chicken ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+
+        <!-- Image 4 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="banana-bread.jpg" style="max-width: 250px; max-height: 127px;">
+            <br>
+            <h5>Banana-bread</h5>
+            <p class="price">$19.99</p>
+            <p>Bananas baked with ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="fritata.jpg" style="max-height:125px;">
+            <br>
+            <h5>Fritata</h5>
+            <p class="price">$19.99</p>
+            <p>Chicken and ham filled .....</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="omlte.jpg" style="max-height:125px;">
+            <br>
+            <h5>Omelette</h5>
+            <p class="price">$19.99</p>
+            <p>Moist,cheese filled ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
+
+    <!-- Lunch Specials -->
+    <h2 style="margin:10px 50px 10px 50px;">Lunch Specials</h2>
+    <div class="items">
+
+        <!-- Image 1 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="steak.jpg" style="width:280px;height:130px;">
+            <br>
+            <h5>Chicken Steak</h5>
+            <p class="price">$19.99</p>
+            <p>Juicy moist marinated...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="BLT.jpg" style="max-width: 280px; max-height:135px">
+            <br>
+            <h5>BLT Sandwich</h5>
+            <p class="price">$19.99</p>
+            <p>Bread toasted with ham, cheese...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="burger.jpg" style="max-width: 250px; max-height: 129px;">
+            <br>
+            <h5>Classic Burger.</h5>
+            <p class="price">$19.99</p>
+            <p>Delicious and tender chicken ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+
+        <!-- Image 4 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="burrito.jpg" style="max-width: 250px; max-height: 127px;">
+            <br>
+            <h5>Chicken Burrito</h5>
+            <p class="price">$19.99</p>
+            <p>Chicken, spices and cheese ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="card" style="max-height:350px ;">
+            <img src="fish-and-chips.jpg" style="max-height:125px;">
+            <br>
+            <h5>Fish and Chips</h5>
+            <p class="price">$19.99</p>
+            <p>Classic fish and chips prepared with ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
+    <!-- Dessert -->
+    <h2 style="margin:10px 50px 10px 50px;">Dessert</h2>
+    <div class="items">
+
+        <!-- Image 1 -->
+        <div class="card" style="max-height:450px ;">
+            <img src="donut2.jpg" style="width:280px; height: 190px;">
+            <br>
+            <h5>Donuts</h5>
+            <p class="price">$19.99</p>
+            <p>Soft moist differently ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="card" style="max-height:450px ;">
+            <img src="devil-pastry.jpg" style="width: 280px; max-height:190px">
+            <br>
+            <h5>Devil Pastry...</h5>
+            <p class="price">$19.99</p>
+            <p>Filled with chocolate to ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="card" style="max-height:450px ;">
+            <img src="test (1).jpg" style="max-width: 280px; max-height: 250px;">
+            <br>
+            <h5>Lemon Cake</h5>
+            <p class="price">$19.99</p>
+            <p>Creamy, rich and delicious ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+
+        <!-- Image 4 -->
+        <div class="card" style="max-height:400px ;">
+            <img src="choco.jpg" style="max-width: 300px; max-height: 200px;">
+            <br>
+            <h5>Chocolate Cake</h5>
+            <p class="price">$19.99</p>
+            <p>Made with 3 types of chocolates ...</p>
+            <p><button style="margin-bottom:8px;">Add to Cart</button></p>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="card" style="max-height:450px ;">
+            <img src="tart.jpg" style="max-width: 280px;max-height:250px;">
+            <br>
+            <h5>Lemon Tart</h5>
+            <p class="price">$19.99</p>
+            <p>Made with lemon curd, honey, cream ...</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
